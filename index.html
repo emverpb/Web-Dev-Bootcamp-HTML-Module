@@ -1,0 +1,164 @@
+<!-- # Web-Dev-Bootcamp-HTML-Module
+HTML only web created from my web dev bootcamp -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon Form</title>
+</head>
+<body>
+
+<h1>Trainer Registration</h1>
+
+<form>
+<!-- Name input -->
+	<label for="firstname">First Name:</label>
+	<input id="firstname" type="text" placeholder="Ash" name="FN" required>
+
+	<label for="lastname">Last Name:</label>
+	<input id="lastname" type="text" placeholder="Ketchum" name="LN" required>
+
+<!--Gender input -->
+	<p> <!-- Can also be <div></div>. This does not have the same spacing as the paragraph tag (p:1.5 spacing::div:single spacing)-->
+		<label for="male">Male</label>
+		<input id="male" type="radio" name="gender" value="1">
+
+		<label for="female">Female</label>
+		<input id="female" type="radio" name="gender" value="2">
+
+		<label for="other">Other</label>
+		<input id="other" type="radio" name="gender" value="3">
+	</p>
+
+<!-- Email and password inputs -->
+	<p>
+		<label for="email">Email:</label>
+		<input id="email" type="email" placeholder="your email" required name="email">
+
+		<label for="password">Password:</label>
+		<input id="password" type="password" pattern=".{5,10}" title="5 to 10 characters" name="password" required>
+		<!-- <input id="password" type="password" minlength="5" maxlength="10" name="password" required> -->
+	</p>
+
+<!-- Birthdy input -->
+	<p>
+		<label for="birthday">Birthday:</label>
+		
+		<!-- Month -->
+		<select id="birthday" name="Month">
+			<option value="M0">Month</option>
+			<option value="M1">Jan</option>
+			<option value="M2">Feb</option>
+			<option value="M3">Mar</option>
+			<option value="M4">Apr</option>
+			<option value="M5">May</option>
+			<option value="M6">Jun</option>
+			<option value="M7">Jul</option>
+			<option value="M8">Aug</option>
+			<option value="M9">Sep</option>
+			<option value="M10">Oct</option>
+			<option value="M11">Nov</option>
+			<option value="M12">Dec</option>
+		</select>
+		<!-- Day -->
+		<select id="birthday" name="Day">
+			<option value="D0">Day</option>
+			<option value="D1">1-3</option>
+			<option value="D2"1>4-6</option>
+			<option value="D3">7-9</option>
+			<option value="D4">10-12</option>
+			<option value="D5">13-15</option>
+			<option value="D6">16-18</option>
+			<option value="D7">19-21</option>
+			<option value="D8">22-24</option>
+			<option value="D9">25-27</option>
+			<option value="D10">28-30</option>
+		</select>
+		<!-- Year -->
+		<select id="birthday" name="Year">
+			<option value="Y0">Year</option>
+			<option value="Y1">1921-1930</option>
+			<option value="Y2">1931-1940</option>
+			<option value="Y3">1941-1950</option>
+			<option value="Y4">1951-1960</option>
+			<option value="Y5">1961-1970</option>
+			<option value="Y6">1971-1980</option>
+			<option value="Y7">1981-1990</option>
+			<option value="Y8">1991-2000</option>
+			<option value="Y9">2001-2010</option>
+			<option value="Y10">2011-2017</option>
+		</select>	
+	</p>
+
+<!-- Terms and Conditions -->
+	<p>
+		<label for="TnC">I agree to the terms and conditions</label>
+		<input id="TnC" type="checkbox" name="TnC">
+	</p>
+
+<button>Submit</button>
+</form>
+
+<h1>Starter Pokemon Chart</h1>
+
+<table border="1">
+<thead>
+	<tr>
+	<th>Image</th>
+	<th>Name</th>
+	<th>Type</th>
+	<th>Moves/Attacks (Lv.10)</th>
+	<th>Evolves Into</th>
+	</tr>
+</thead>
+<tbody>
+<!-- Bulbasaur -->
+	<tr>
+		<td><img width="100" src="https://vignette4.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest?cb=20140328190757"></td>
+		<td>Bulbasaur</td>
+		<td>Grass/Poison</td>
+		<td>
+			<ul>
+				<li>Tackle</li>				
+				<li>Growl</li>				
+				<li>Leech Seed</li>				
+				<li>Vine Whip</li>				
+			</ul>
+		</td>
+		<td><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
+	</tr>
+<!-- Charmander -->
+	<tr>
+		<td><img width="100" src="https://vignette2.wikia.nocookie.net/pokemon/images/7/73/004Charmander.png/revision/latest?cb=20140724195345"></td>
+		<td>Charmander</td>
+		<td>Fire</td>
+		<td>
+			<ul>
+				<li>Scratch</li>				
+				<li>Growl</li>				
+				<li>Ember</li>				
+				<li>Smokescreen</li>				
+			</ul>
+		</td>
+		<td><a href="http://pokemon.wikia.com/wiki/Charmeleon">Charmeleon</a></td>
+	</tr>
+<!-- Squirtle -->
+	<tr>
+		<td><img width="100" src="https://vignette2.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png/revision/latest?cb=20140328191525"></td>
+		<td>Squirtle</td>
+		<td>Water</td>
+		<td>
+			<ul>
+				<li>Tackle</li>				
+				<li>Tail Whip</li>				
+				<li>Water Gun</li>				
+				<li>Withdraw</li>				
+			</ul>
+		</td>
+		<td><a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a></td>
+	</tr>
+</tbody>
+</table>
+
+</body>
+</html>
